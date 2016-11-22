@@ -1,4 +1,4 @@
-FROM appengine-ruby-base
+FROM ${STAGING_IMAGE}
 COPY Gemfile Gemfile.lock /app/
 RUN bundle install && rbenv rehash
 COPY . /app/

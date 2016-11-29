@@ -7,8 +7,9 @@ steps:
   #   args: []
   - name: gcr.io/nick-cloudbuild/integration_test
     args: ['-i', '${IMAGE}',
-           '-d', 'test/sample_apps/rack_app'
-           # '-d', 'test/sample_apps/rails5_app'
+           '-d', 'test/sample_apps/rack_app',
+           # '-d', 'test/sample_apps/rails5_app',
+           '--no-deploy'
           ]
 
 images:
